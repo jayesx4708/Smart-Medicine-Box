@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Smart Medicine Box</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(135deg, #2E86AB 0%, #27AE60 100%);
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+        }
+        .container {
+            max-width: 800px;
+            padding: 40px;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+        }
+        p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+            opacity: 0.9;
+        }
+        .buttons {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .btn {
+            padding: 15px 30px;
+            border-radius: 10px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+        }
+        .btn-primary {
+            background: white;
+            color: #2E86AB;
+        }
+        .btn-secondary {
+            background: transparent;
+            color: white;
+            border: 2px solid white;
+        }
+        .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+        .logo {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+            <i class="fas fa-pills"></i>
+        </div>
+        <h1>Smart Medicine Box Pro</h1>
+        <p>Revolutionary healthcare management system with RFID tracking and intelligent medication scheduling</p>
+        <div class="buttons">
+            <a href="home.html" class="btn btn-primary">
+                <i class="fas fa-home"></i> Visit Home Page
+            </a>
+            <a href="login.html" class="btn btn-secondary">
+                <i class="fas fa-sign-in-alt"></i> Go to Login
+            </a>
+            <a href="main.html" class="btn btn-secondary">
+                <i class="fas fa-tachometer-alt"></i> View Dashboard
+            </a>
+        </div>
+        
+             <div class="sidebar-footer">
+      © Smart Medicine Box - The Developing Dynamos<br>
+      Created by JAYESH RAI & Devansh Arjariya
+    </div>
+</body>
+</html>
