@@ -124,15 +124,11 @@ body {
   flex-direction: column;
   position: fixed;
   height: 100vh;
-  overflow: hidden;   /* ✅ whole sidebar scrolls */
-  /* overflow-x: hidden; */
+  overflow-y: auto;
   z-index: 1000;
   backdrop-filter: blur(10px);
   transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-
-
 
 .sidebar::-webkit-scrollbar {
   width: 6px;
@@ -148,7 +144,7 @@ body {
 }
 
 .sidebar-header {
-  padding: 1.2rem 1rem ;
+  padding: 2rem 1.5rem 1.5rem;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   text-align: center;
   background: rgba(255, 255, 255, 0.05);
@@ -189,9 +185,9 @@ body {
   background: var(--glassmorphism);
   backdrop-filter: blur(10px);
   border: 1px solid var(--glassmorphism-border);
-  padding: 1rem;
+  padding: 1.5rem;
   border-radius: 16px;
-  margin: 0.8rem;
+  margin: 1.5rem;
   text-align: center;
   transition: all 0.3s ease;
 }
@@ -233,9 +229,9 @@ body {
   background: var(--glassmorphism);
   backdrop-filter: blur(10px);
   border: 1px solid var(--glassmorphism-border);
-  padding: 1rem;
+  padding: 1.5rem;
   border-radius: 16px;
-  margin: 0.8rem;
+  margin: 1.5rem;
   text-align: center;
   transition: all 0.3s ease;
 }
@@ -302,26 +298,25 @@ body {
 
 .nav-menu {
   flex: 1;
-  padding: 0.5rem 0;
+  padding: 1rem 0;
 }
 
 .nav-item {
   display: flex;
   align-items: center;
-  padding: 0.65rem 1.2rem;
+  padding: 1rem 1.5rem;
   color: var(--sidebar-text);
   text-decoration: none;
-  white-space: normal;
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   border: none;
   background: none;
   width: 100%;
   text-align: left;
   cursor: pointer;
-  font-size: 0.95rem;
+  font-size: 1rem;
   font-weight: 500;
   position: relative;
-  overflow: hidden; 
+  overflow: hidden;
 }
 
 .nav-item::before {
@@ -352,14 +347,14 @@ body {
 
 .nav-item i {
   margin-right: 1rem;
-  font-size: 1rem;
+  font-size: 1.1rem;
   width: 20px;
   text-align: center;
 }
 
 /* Theme Controls */
 .theme-controls {
-  padding: 1rem;
+  padding: 1.5rem;
   border-top: 1px solid rgba(255, 255, 255, 0.1);
   background: rgba(255, 255, 255, 0.05);
 }
@@ -398,11 +393,9 @@ body {
 }
 
 .sidebar-footer {
-  margin-top: auto;
-
-  padding: 1rem;
+  padding: 1.5rem;
   text-align: center;
-  font-size: 0.75rem;
+  font-size: 0.8rem;
   opacity: 0.7;
   border-top: 1px solid rgba(255, 255, 255, 0.1);
   background: rgba(0, 0, 0, 0.1);
@@ -916,7 +909,7 @@ button:active {
   width: 90%;
   max-width: 600px;
   max-height: 90vh;
-  /* overflow-y: auto; */
+  overflow-y: auto;
   animation: slideIn 0.3s ease;
 }
 
